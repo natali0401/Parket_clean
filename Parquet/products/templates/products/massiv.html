@@ -1,0 +1,16 @@
+{% extends 'products/base.html' %}
+
+{% block title %}
+Товары
+{% endblock %}
+
+{% block content %}
+<h2>Паркет штучный</h2>
+{% for i in mas %}
+    <h3>Название: {{ i.name }}</h3>
+    <h4>Сорт: {{ i.sort }}</h4>
+    <h4>Порода: {{ i.poroda }}</h4>
+    <h4>Описание: {{ i.opis }}</h4>
+{% endfor %}
+{% endblock %}
+

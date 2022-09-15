@@ -1,0 +1,14 @@
+{% extends 'products/base.html' %}
+
+{% block title %}
+Обратный звонок
+{% endblock %}
+
+{% block content %}
+<h3 class="my-1">Мы вам обязательно перезвоним </h3>
+    <form class="article-form" action="" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input class="btn btn-primary" type="submit" value="Отправить">
+    </form>
+{% endblock %}

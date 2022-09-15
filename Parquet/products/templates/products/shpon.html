@@ -1,0 +1,15 @@
+{% extends 'products/base.html' %}
+
+{% block title %}
+Товары
+{% endblock %}
+
+{% block content %}
+{% for i in shp %}
+    <h2>Название: {{ i.name }}</h2>
+    <h4>Порода: {{ i.poroda }}</h4>
+    <h4>Толщина: {{ i.thickness }}</h4>
+    <h4>Описание: {{ i.opis }}</h4>
+{% endfor %}
+{% endblock %}
+
